@@ -116,6 +116,8 @@ class App extends React.Component {
             location={this.state.displayLocation}
           />
         )}
+
+        <Footer />
       </main>
     );
   }
@@ -177,6 +179,26 @@ class Day extends React.Component {
           {Math.floor(min)}&deg; &mdash; <strong>{Math.ceil(max)}&deg;</strong>
         </p>
       </li>
+    );
+  }
+}
+
+class Footer extends React.Component {
+  render() {
+    return (
+      <footer>
+        <p>
+          &copy; 2024{" "}
+          <a
+            href="https://kanezaio.netlify.app/#intro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Kaneza
+          </a>{" "}
+          - Weather Wave. All rights reserved.
+        </p>
+      </footer>
     );
   }
 }

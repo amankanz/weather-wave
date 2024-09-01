@@ -186,6 +186,10 @@ input[type="text"] {
   color: #007bff;
 }
 
+footer p a {
+  color: #007bff;
+}
+
 /* Responsive Design */
 @media (min-width: 480px) {
   main.app {
